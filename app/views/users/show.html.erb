@@ -1,0 +1,12 @@
+<%= link_to "Log Out", :logout %>
+<% title 'User Profile' %>
+
+<h3><%= @user.username %></h3>
+
+Email<br />
+<%= @user.email %> <br /> <br />
+
+<h5>Tracks Submitted</h5>
+<% @tracks.each do |track| %>
+<%= link_to track.title, track %> - <%= track.artist %> <br />
+<% end %>

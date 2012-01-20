@@ -1,0 +1,5 @@
+<% title @artist %>
+
+  <% for track in @tracks_by_artist %>
+    <%= link_to track.title, track %>  <br />
+  <% end %>

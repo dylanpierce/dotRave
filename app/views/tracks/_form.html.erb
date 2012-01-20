@@ -1,0 +1,25 @@
+<%= form_for @track do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :artist %><br />
+    <%= f.text_field :artist %>
+  </p>
+  <p>
+    <%= f.label :youtube_link %><br />
+    <%= f.text_field :youtube_link %>
+  </p>
+  <p>
+    <%= f.label :download_link %><br />
+    <%= f.text_field :download_link %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+
+  <p><%= f.submit %></p>
+<% end %>

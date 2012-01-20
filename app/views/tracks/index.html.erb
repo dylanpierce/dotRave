@@ -1,0 +1,11 @@
+<% title "Tracks" %>
+
+  <% for track in @tracks %>
+    <%= link_to track.title, track %>-
+    <%= link_to track.artist, artist_path(track.artist)%><br />
+    Uploaded by: <%= track.user.username %><br /><br />
+  <% end %>
+
+
+
+<p><%= link_to "New Track", new_track_path %></p>

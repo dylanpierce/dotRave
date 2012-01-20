@@ -1,0 +1,36 @@
+<% title "Track" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @track.title %>
+</p>
+<p>
+  <strong>Artist:</strong>
+  <%= @track.artist %>
+</p>
+<p>
+  <strong>Youtube Link:</strong> <br />
+  <%= @track.youtube_link %>
+  <%= youtube_embed(@track.youtube_link) %>
+</p>
+<p>
+  <strong>Download Link:</strong>
+  <%= @track.download_link %>
+</p>
+<p>
+  <strong>Created At:</strong>
+  <%= @track.created_at %>
+</p>
+<p>
+  <strong>Created By:</strong>
+  <%= @track.user.username unless @track.user.nil? %>
+</p>
+<p>
+  <strong></strong>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_track_path(@track) %> |
+  <%= link_to "Destroy", @track, :confirm => 'Are you sure?', :method => :destroy %> |
+  <%= link_to "View All", tracks_path %>
+</p>
