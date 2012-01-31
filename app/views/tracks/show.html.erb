@@ -1,3 +1,4 @@
+
 <% title "Track" %>
 
 <p>
@@ -26,7 +27,9 @@
   <%= @track.user.username unless @track.user.nil? %>
 </p>
 <p>
-  <strong></strong>
+  <strong>Rating:</strong>
+  <%= @track.votes.count %><br />
+  <%= link_to "Upvote", :vote %>
 </p>
 
 <p>

@@ -1,14 +1,17 @@
 Bluewaffles::Application.routes.draw do
 
+
   resources :tracks
 
   resources :sessions
 
   resources :users
 
+
+
   root :to => "tracks#index"
 
-  match 'user/edit' => 'users#edit', :as => :edit_current_user
+  match 'settings' => 'users#edit', :as => :settings
 
   match 'profile' => 'users#show', :as => :show_profile
 
@@ -18,7 +21,11 @@ Bluewaffles::Application.routes.draw do
 
   match 'login' => 'sessions#new', :as => :login
 
-  match '/artist/:artist' => 'tracks#artist', :as => :artist
+  match 'forgot_password' => 'sessions#forgotpassword', :as => :forgot_password
+
+  match '/tracks/vote/:id' => 'tracks#vote', :as => :vote
+
+  match ':username' => "users#show", :as => :view_profile
 
 
 

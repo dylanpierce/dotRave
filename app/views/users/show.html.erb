@@ -10,3 +10,5 @@ Email<br />
 <% @tracks.each do |track| %>
 <%= link_to track.title, track %> - <%= track.artist %> <br />
 <% end %>
+<h5>Votes Cast</h5>
+<%= @user.votes.count %>

@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_filter :login_required, :except => [:new, :create]
 
+
   def new
     @user = User.new
   end
@@ -16,11 +17,16 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = current_user
+      @user = current_user
   end
 
   def show
-    @user = current_user
+    if params.has_key?(:username)
+      @user = User.find_by_username(params[:username])
+     else
+       @user = current_user
+     end
+
     @tracks =  Track.find_all_by_user_id(session[:user_id])
   end
 

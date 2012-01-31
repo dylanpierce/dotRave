@@ -20,4 +20,13 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to root_url, :notice => "You have been logged out."
   end
+
+  def forgot_password
+    @user = User.find_by_email(params[:email])
+    if user
+      # send email
+    else
+      flash.now[:alert] = "Invalid e-mail."
+    end
+  end
 end

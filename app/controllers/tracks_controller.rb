@@ -4,6 +4,7 @@ class TracksController < ApplicationController
 
   def index
     @tracks = Track.all
+    @tracks.sort_by("votes_count")
   end
 
   def show
@@ -38,14 +39,24 @@ class TracksController < ApplicationController
     end
   end
 
+  def vote
+    @vote = Vote.new
+    @track = Track.find(params[:id])
+    @vote.user = current_user
+    @vote.track = @track
+    if @vote.save
+      redirect_to @track, :notice => "Successfully voted."
+    else
+      redirect_to @track, :notice => "Vote failed."
+    end
+
+
+  end
+
   def destroy
     @track = Track.find(params[:id])
     @track.destroy
     redirect_to tracks_url, :notice => "Successfully destroyed track."
   end
 
-  def artist
-    @artist = Track.find_by_artist(params[:artist]).artist
-    @tracks_by_artist = Track.find_all_by_artist(params[:artist])
-  end
 end
