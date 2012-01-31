@@ -30,7 +30,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tracks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.230769">
+            <state line="2" column="26" selection-start="48" selection-end="48" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
@@ -39,7 +39,16 @@
       <file leaf-file-name="tracks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tracks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="149" selection-end="149" vertical-scroll-proportion="0.115384616">
+            <state line="5" column="47" selection-start="140" selection-end="140" vertical-scroll-proportion="0.09615385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vote.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="3" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,11 +92,11 @@
         <option value="$PROJECT_DIR$/app/views/votes/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/votes/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/votes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/vote.rb" />
         <option value="$PROJECT_DIR$/app/views/tracks/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tracks/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/vote.rb" />
+        <option value="$PROJECT_DIR$/app/views/tracks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tracks_controller.rb" />
       </list>
     </option>
@@ -286,6 +295,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bluewaffles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bluewaffles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,16 +777,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="207" selection-end="207" vertical-scroll-proportion="0.13662457">
+        <state line="16" column="9" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tracks/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.230769">
+        <state line="6" column="3" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -771,16 +798,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/tracks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+        <state line="2" column="26" selection-start="48" selection-end="48" vertical-scroll-proportion="-1.3076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tracks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="149" selection-end="149" vertical-scroll-proportion="0.115384616">
+        <state line="5" column="47" selection-start="140" selection-end="140" vertical-scroll-proportion="0.09615385">
           <folding />
         </state>
       </provider>

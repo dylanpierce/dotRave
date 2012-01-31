@@ -4,7 +4,6 @@ class TracksController < ApplicationController
 
   def index
     @tracks = Track.all
-    @tracks.sort_by("votes_count")
   end
 
   def show
